@@ -1,74 +1,291 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	margin:0;
+	font-family: 'BenchNine', Arial, Helvetica, sans-serif;
+	font-size: 100%;
 }
 
-body{
-	background:#5eabe1;
+a { font-weight: normal;
+	text-decoration: none;
 }
 
-#container{
+/* 設置圖片視頻等自適應調整 */
+
+img {
+
+max-width： 100%;
+
+height： auto;
+
+width： auto9; /* ie8 */
+
+}
+
+#wrapper { 
 	width: 100%;
-	height:100%;
 	margin:0 auto;
 }
 
-h3{
-	margin-top: 10%;
-	text-align:center;
-	color:#FFF;
-	font-size:42px;
-	font-weight:700;
-	line-height: 36px;
-	font-family:Arial, Helvetica, sans-serif;
+#header {
+	display:block; 
+	width: 100%;
+	height:100px; 
+	background:#f0f0f0; 
+	line-height:100px;
+	position:relative; 
 }
 
-img{
-	vertical-align:middle;
+.header_logo {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.header_logo > img{
+	width: 66px;
+	height: 73px;
+}
+
+h1 {
+	font-weight: normal;
+	color: #555;
+	font-size: 24px;
+}
+
+.header_title{
+	font-size: 24px;
+	color: #555555;
+	margin-left: 80px;
+}
+
+#content {
+}
+
+.content_box{
 	width: 100%;
-	height:auto;
+	height: 100%;
+	background: #fff;
+	margin:0;
+	padding:0;
+}
+
+.arms_photo{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.content_box > p{
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.experience {
+	float: right;
+	margin-top: 20px;
+	margin-right: 5%;
+}
+
+.experience > p{
+	font-size: 16px;
+}
+
+.title{
+	font-size:36px;
+	color: #555; 
+	font-weight: normal;
+	margin-left: 10px;
+	padding-top: 20px;
+}
+
+.line {
+	width: 100%;
+	height:1px;
+	border-bottom: 1px #555 solid;
+}
+
+h3 {
+	font-size: 18px;
+	color: #4d4d4d;
+	margin-bottom: 0;
+	line-height: 18px;
+	margin-top: 30px;
+}
+
+.line2 {
+	width: 100%;
+	height:1px;
+	border-bottom: 1px #8e8e8e solid;
+	overflow: hidden;
+}
+
+.image-set {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.image_tn {
+	width: 80px;
+	height: 60px;
+	margin: 10px 8px 0px 0px;
+	display: inline-block;
+	padding: 4px;
+	background-color: #f1f1f1;
+	line-height: 0;
+	-webkit-transition: background-color 0.1s ease-out;
+	-moz-transition: background-color 0.1s ease-out;
+	-o-transition: background-color 0.1s ease-out;
+	transition: background-color 0.1s ease-out;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.image_tn:hover{
+	background-color:#b62530;
+}
+
+#footer {
+	height:50px; 
+	background:#f0f0f0; 
+	line-height:50px; 
+	text-align:center; 
+	color:#555555; 
+	font-size: 16px;
+}
+
+/*======================Menu===========================*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#cssmenu {
+	position:absolute;
+	width: 420px;
+	font-size: 18px;
+	line-height: 100px;
+	text-transform: uppercase;
+	text-align: left;
+	right:0%;
+	z-index:99;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+}
+#cssmenu > ul li.has-sub > a {
+  background-image: url('images/caret.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+  background: #b72531 url('images/caret.png') no-repeat;
+  background-position: 90% 195%;
+}
+#cssmenu > ul li a {
+	display: block;
+	padding: 0px 24px 0px 24px;
+	text-decoration: none;
+	color: #747474;
+
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+	background: #b72531;
+	color: #fff;
+	min-height: 0px;
+
+}
+
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 40%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url(../img/menu.png) no-repeat ;
+    background-position: 65% 180%;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #d80041;
+    background-position: 65% -85%;
+  }
+  #cssmenu > ul li {
+	display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+	position: relative;
+	background-color: #FFFFFF;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
 }
