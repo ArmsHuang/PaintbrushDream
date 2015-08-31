@@ -161,7 +161,7 @@ h3 {
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 #cssmenu {
 	position:absolute;
-	width: 420px;
+	width: 460px;
 	font-size: 18px;
 	line-height: 100px;
 	text-transform: uppercase;
@@ -241,6 +241,7 @@ h3 {
   }
   #cssmenu > ul li#responsive-tab {
     display: block;
+	padding: 2px 0px 0px 70px;
   }
   #cssmenu > ul li#responsive-tab a {
     background: url(../img/menu.png) no-repeat ;
@@ -289,11 +290,11 @@ h3 {
     display: block !important;
   }
 }
-/*Mobile*/
+
 /*Mobile*/
 @media (max-width: 400px) {
 	#cssmenu > ul li#responsive-tab {
 		background-position: 85% 180%;
-		padding: 0px 0px 0px 12px;
+		padding: 2px 0px 0px 70px;
 }
 }
