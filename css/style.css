@@ -241,6 +241,7 @@ h3 {
   }
   #cssmenu > ul li#responsive-tab {
     display: block;
+	padding: 2px 0px 0px 70px;
   }
   #cssmenu > ul li#responsive-tab a {
     background: url(../img/menu.png) no-repeat ;
@@ -288,4 +289,12 @@ h3 {
   #cssmenu > ul ul li.collapsed {
     display: block !important;
   }
+}
+
+/*Mobile*/
+@media (max-width: 400px) {
+	#cssmenu > ul li#responsive-tab {
+		background-position: 85% 180%;
+		padding: 2px 0px 0px 70px;
+}
 }
