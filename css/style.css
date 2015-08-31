@@ -295,6 +295,6 @@ h3 {
 @media (max-width: 400px) {
 	#cssmenu > ul li#responsive-tab {
 		background-position: 85% 180%;
-		padding: 2px 0px 0px 70px;
+		padding: 0px 0px 0px 70px;
 }
 }
