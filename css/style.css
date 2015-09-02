@@ -1,4 +1,4 @@
-body {
+﻿body {
 	margin:0;
 	font-family: 'BenchNine', Arial, Helvetica, sans-serif;
 	font-size: 100%;
@@ -210,6 +210,15 @@ h3 {
 #cssmenu > ul li.has-sub ul li {
   display: block;
 }
+
+#cssmenu > ul li.has-sub ul li.has-sub2{
+	line-height:40px;
+}
+
+#cssmenu > ul li.has-sub ul li.last{
+	line-height:40px;
+}
+
 #cssmenu > ul li.has-sub > a {
   background-image: url('images/caret.png');
   background-repeat: no-repeat;
@@ -241,7 +250,7 @@ h3 {
   }
   #cssmenu > ul li#responsive-tab {
     display: block;
-	padding: 2px 0px 0px 70px;
+	padding: 0px 0px 0px 70px;
   }
   #cssmenu > ul li#responsive-tab a {
     background: url(../img/menu.png) no-repeat ;
@@ -258,6 +267,8 @@ h3 {
     float: none;
   }
   #cssmenu > ul li.has-sub {
+	clear: inherit;
+	line-height:40px;
 	position: relative;
 	background-color: #FFFFFF;
   }
@@ -295,6 +306,21 @@ h3 {
 @media (max-width: 400px) {
 	#cssmenu > ul li#responsive-tab {
 		background-position: 85% 180%;
-		padding: 2px 0px 0px 70px;
+		padding: 0px 0px 0px 70px;
 }
+
+#cssmenu > ul li.has-sub{
+	clear: inherit;
+	line-height:40px;
 }
+
+#cssmenu > ul li.has-sub ul li.has-sub2 {
+	line-height:30px;
+}
+
+#cssmenu > ul li.has-sub ul li.last {
+	line-height:30px;
+}
+
+}
+
