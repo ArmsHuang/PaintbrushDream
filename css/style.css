@@ -244,6 +244,21 @@ h3 {
 
 }
 
+@media (max-width: 1024px){
+#cssmenu ul li.has-sub {
+	line-height: 100px;
+}
+
+#cssmenu ul li.has-sub ul li.has-sub2{
+	line-height: 100px;
+}
+
+#cssmenu > ul li.has-sub ul li.last {
+	line-height:100px;
+}
+
+}
+
 @media (max-width: 600px) {
   #cssmenu > ul {
     width: 40%;
