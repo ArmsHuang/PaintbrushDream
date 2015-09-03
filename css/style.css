@@ -244,7 +244,7 @@ h3 {
 
 }
 
-@media (max-width: 1024px){
+@media (min-width: 1920px){
 #cssmenu ul li.has-sub {
 	line-height: 100px;
 }
